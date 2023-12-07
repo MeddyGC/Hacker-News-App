@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2A68132B2245CD0054BBEE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CE2A68122B2245CD0054BBEE /* README.md */; };
 		CECB62ED2B1EB71C00F09369 /* HKRNWSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB62EC2B1EB71C00F09369 /* HKRNWSApp.swift */; };
 		CECB62EF2B1EB71C00F09369 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB62EE2B1EB71C00F09369 /* ContentView.swift */; };
 		CECB62F12B1EB71F00F09369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECB62F02B1EB71F00F09369 /* Assets.xcassets */; };
 		CECB62F42B1EB71F00F09369 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECB62F32B1EB71F00F09369 /* Preview Assets.xcassets */; };
+		CECB62FC2B1EBEA700F09369 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB62FB2B1EBEA700F09369 /* NetworkManager.swift */; };
+		CECB62FE2B1EC11400F09369 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB62FD2B1EC11400F09369 /* PostData.swift */; };
+		CECB63012B1EC7D400F09369 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB63002B1EC7D400F09369 /* DetailView.swift */; };
+		CECB63032B1ECE0800F09369 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB63022B1ECE0800F09369 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2A68122B2245CD0054BBEE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CECB62E92B1EB71C00F09369 /* HKRNWS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKRNWS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECB62EC2B1EB71C00F09369 /* HKRNWSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKRNWSApp.swift; sourceTree = "<group>"; };
 		CECB62EE2B1EB71C00F09369 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CECB62F02B1EB71F00F09369 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CECB62F32B1EB71F00F09369 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CECB62FB2B1EBEA700F09369 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CECB62FD2B1EC11400F09369 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		CECB63002B1EC7D400F09369 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CECB63022B1ECE0800F09369 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		CEDE3CE02B1FC9530026D8C8 /* HKRNWS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HKRNWS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +46,7 @@
 		CECB62E02B1EB71C00F09369 = {
 			isa = PBXGroup;
 			children = (
+				CE2A68122B2245CD0054BBEE /* README.md */,
 				CECB62EB2B1EB71C00F09369 /* HKRNWS */,
 				CECB62EA2B1EB71C00F09369 /* Products */,
 			);
@@ -51,6 +63,9 @@
 		CECB62EB2B1EB71C00F09369 /* HKRNWS */ = {
 			isa = PBXGroup;
 			children = (
+				CEDE3CE02B1FC9530026D8C8 /* HKRNWS.entitlements */,
+				CECB62FF2B1EC7A500F09369 /* Views */,
+				CECB62FA2B1EBE6E00F09369 /* Models */,
 				CECB62EC2B1EB71C00F09369 /* HKRNWSApp.swift */,
 				CECB62EE2B1EB71C00F09369 /* ContentView.swift */,
 				CECB62F02B1EB71F00F09369 /* Assets.xcassets */,
@@ -65,6 +80,24 @@
 				CECB62F32B1EB71F00F09369 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CECB62FA2B1EBE6E00F09369 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CECB62FB2B1EBEA700F09369 /* NetworkManager.swift */,
+				CECB62FD2B1EC11400F09369 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CECB62FF2B1EC7A500F09369 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CECB63002B1EC7D400F09369 /* DetailView.swift */,
+				CECB63022B1ECE0800F09369 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2A68132B2245CD0054BBEE /* README.md in Resources */,
 				CECB62F42B1EB71F00F09369 /* Preview Assets.xcassets in Resources */,
 				CECB62F12B1EB71F00F09369 /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECB62FC2B1EBEA700F09369 /* NetworkManager.swift in Sources */,
+				CECB62FE2B1EC11400F09369 /* PostData.swift in Sources */,
 				CECB62EF2B1EB71C00F09369 /* ContentView.swift in Sources */,
+				CECB63032B1ECE0800F09369 /* WebView.swift in Sources */,
+				CECB63012B1EC7D400F09369 /* DetailView.swift in Sources */,
 				CECB62ED2B1EB71C00F09369 /* HKRNWSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,58 +300,78 @@
 		CECB62F82B1EB71F00F09369 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HKRNWS/HKRNWS.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HKRNWS/Preview Content\"";
 				DEVELOPMENT_TEAM = 9DJ2CR4DPS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HNEWS;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.meddycond.HKRNWS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3,4,6";
 			};
 			name = Debug;
 		};
 		CECB62F92B1EB71F00F09369 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HKRNWS/HKRNWS.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HKRNWS/Preview Content\"";
 				DEVELOPMENT_TEAM = 9DJ2CR4DPS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HNEWS;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.meddycond.HKRNWS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3,4,6";
 			};
 			name = Release;
 		};
