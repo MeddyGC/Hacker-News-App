@@ -13,6 +13,7 @@ Include screenshots or GIFs showcasing the web and iOS interfaces of your applic
 - SwiftUI: Used for the web interface.
 - UIKit: Used for the iOS app.
 - Hacker News API: The source of news data.
+- Features AppBrewery - Angela YU 
 
 ## Setup
 
@@ -51,10 +52,11 @@ This project is licensed under the [MIT License](LICENSE).
 ## Acknowledgements
 
 - Hacker News API: Thanks to Hacker News for providing the API.
+- UI and Web UI: Thanks to Angelu (App Brewery)
 
 ## Contact
 
-For questions or feedback, contact [Your Name] at [your.email@example.com].
+For questions or feedback, contact Meddy at meddycond@gmail.com.
 
 ## Additional Sections (Optional)
 
